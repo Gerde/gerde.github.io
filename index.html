@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="home">
+	<section>
+		<h2 class="smallcap">about</h2>
+		<p><a href="https://gerde.github.io">Gerde's Blog</a>Record everthing about you.</p>
+	</section>
+	<section>
+		<h2 class="smallcap">posts</h2>
+		<ul class="post-list">
+			{% for post in site.posts limit:20 %}
+			<li>
+				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
+	</section>
+</div>

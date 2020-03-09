@@ -1,2 +1,3 @@
-# gerde.github.io
-Gerde's blog
+## README
+
+Hello, this is Gerde's blog.
