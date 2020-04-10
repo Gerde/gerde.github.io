@@ -29,9 +29,10 @@ library(ggplot2)
 library(showtext)
 
 showtext_auto()
-font.add('SimSun', regular = '/usr/share/fonts/opentype/adobe/simsun.ttc')
+font_add('SimSun', regular = '/usr/share/fonts/opentype/adobe/simsun.ttc')
+
 df <- data.frame(x = rnorm(100, mean = 10))
-ggplot(df, aes(x)) + geom_density() + labs(x = '随机数') + theme(text = element_text(family = 'SimSum'))
+ggplot(df, aes(x)) + geom_density() + labs(x = '随机数') + theme(text = element_text(family = 'SimSun'))
 ```
 
 ![]({{site.baseurl}}/images/ggplot2_chinese.png)
