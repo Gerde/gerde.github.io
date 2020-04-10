@@ -24,12 +24,14 @@ fc-list :lang=zh
 
 使用showtext加载字体到R中：
 
-```
+```r
+library(ggplot2)
 library(showtext)
+
 showtext_auto()
 font.add('SimSun', regular = '/usr/share/fonts/opentype/adobe/simsun.ttc')
 df <- data.frame(x = rnorm(100, mean = 10))
 ggplot(df, aes(x)) + geom_density() + labs(x = '随机数') + theme(text = element_text(family = 'SimSum'))
 ```
 
-![]({{site.baseurl}}/images/20200410-ggplot2-chinese.png)
+![]({{site.baseurl}}/images/image.png)
