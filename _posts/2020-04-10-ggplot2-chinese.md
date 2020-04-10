@@ -34,4 +34,4 @@ df <- data.frame(x = rnorm(100, mean = 10))
 ggplot(df, aes(x)) + geom_density() + labs(x = '随机数') + theme(text = element_text(family = 'SimSum'))
 ```
 
-![]({{site.baseurl}}/images/image.png)
+![]({{site.baseurl}}/images/ggplot2_chinese.png)
