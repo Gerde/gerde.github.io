@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [STHDA] 数据正态性检验
+title: STHDA 数据正态性检验
 date:   2020-04-10
 ---
 ```
