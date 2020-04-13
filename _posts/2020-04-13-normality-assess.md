@@ -1,8 +1,9 @@
 ---
 layout: post
-title: STHDA 数据正态性检验
-date:   2020-04-10
+title: STHDA数据正态性检验
+date:   2020-04-13
 ---
+
 ```
 STHDA系列学习笔记, http://www.sthda.com/english
 ```
@@ -28,6 +29,7 @@ p1 / p2
 ![]({{site.baseurl}}/images/visual_plot_20200413.png)
 
 * 使用Q-Q plot:
+
 ```r
 library(ggplot2)
 
@@ -49,6 +51,7 @@ dt <- rnorm(1000, mean = 5)
 shapiro.test(dt)
 
 ```
+
 	Shapiro-Wilk normality test
 
 data:  dt
