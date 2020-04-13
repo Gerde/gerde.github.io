@@ -1,6 +1,6 @@
 ---
 layout: post
-title: STHDA数据正态性检验
+title: [STHDA] 数据正态性检验
 date:   2020-04-13
 ---
 
@@ -52,7 +52,7 @@ shapiro.test(dt)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  dt
 
