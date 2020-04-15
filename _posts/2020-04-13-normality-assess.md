@@ -1,11 +1,11 @@
 ---
 layout: post
-title: STHDA 数据正态性检验
+title: 数据正态性检验
 date:   2020-04-13
 ---
 
 ```
-STHDA系列学习笔记, http://www.sthda.com/english
+源于STHDA, http://www.sthda.com/english/wiki/normality-test-in-r
 ```
 
 统计学检验中，很多参数检验要求数据服从正态分布，所以在使用此类检验之前必须对数据进行正态性检验。通常可以使用作图法或显著性检验法，或结合使用：
@@ -57,10 +57,12 @@ shapiro.test(dt)
 
 ```
 
+```
 Shapiro-Wilk normality test
 
 data:  dt
 
 W = 0.99838, p-value = 0.4765
+```
 
 p = 0.4765, 统计不显著，即该数据服从正态分布。
