@@ -8,7 +8,9 @@ date:   2020-04-10
 
 ```
 fc-list :lang=zh
+```
 
+```
 /usr/share/fonts/opentype/adobe/simsun.ttc: 新宋体,NSimSun:style=Regular
 /usr/share/fonts/opentype/adobe/simhei.ttf: 黑体,SimHei:style=Regular
 /usr/share/fonts/opentype/adobe/AdobeHeitiStd-Regular.otf: Adobe 黑体 Std,Adobe Heiti Std,Adobe Heiti Std R,Adobe 黑体 Std R:style=R,Regular
@@ -19,7 +21,6 @@ fc-list :lang=zh
 /usr/share/fonts/opentype/adobe/simsun.ttc: 宋体,SimSun:style=Regular
 /usr/share/fonts/opentype/adobe/AdobeSongStd-Light.otf: Adobe 宋体 Std,Adobe Song Std,Adobe Song Std L,Adobe 宋体 Std L:style=L,Regular
 /usr/share/fonts/opentype/adobe/simfang.ttf: 仿宋_GB2312,FangSong_GB2312:style=Regular
-
 ```
 
 使用showtext加载字体到R中：
@@ -32,7 +33,8 @@ showtext_auto()
 font_add('SimSun', regular = '/usr/share/fonts/opentype/adobe/simsun.ttc')
 
 df <- data.frame(x = rnorm(100, mean = 10))
-ggplot(df, aes(x)) + geom_density() + labs(x = '随机数') + theme(text = element_text(family = 'SimSun'))
+ggplot(df, aes(x)) + geom_density() + labs(x = '随机数') +
+theme(text = element_text(family = 'SimSun'))
 ```
 
 ![]({{site.baseurl}}/images/ggplot2_chinese.png)
