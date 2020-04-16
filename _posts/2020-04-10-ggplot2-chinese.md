@@ -37,4 +37,4 @@ ggplot(df, aes(x)) + geom_density() + labs(x = '随机数') +
 theme(text = element_text(family = 'SimSun'))
 ```
 
-![]({{site.baseurl}}/images/ggplot2_chinese.png = 250x)
+![]({{site.baseurl}}/images/ggplot2_chinese.png =250x)
